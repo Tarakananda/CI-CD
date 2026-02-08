@@ -2,14 +2,14 @@ pipeline {
   agent any
 
   environment{
-    IMAGE_NAME = ""
-    IMAGE_TAG = ""
+    IMAGE_NAME = "creatingproject"
+    IMAGE_TAG = "latest"
   }
 
   stages {
     stage('Checkout Code') {
       steps {
-        git branch: 'main', url: ''
+        git branch: 'main', url: 'https://github.com/Tarakananda/CI-CD.git'
       }
     }
 
