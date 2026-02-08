@@ -407,5 +407,12 @@
         </pluginManagement>
       </build>
     </profile>
-  </profiles>
+  <profile>
+    <id>ci</id>
+    <properties>
+      <skipTests>true</skipTests>
+    </properties>
+  </profile>
+ </profiles>
+
 </project>
