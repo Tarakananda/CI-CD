@@ -44,7 +44,7 @@ pipeline {
 
   post {
     success {
-      echo 'Application Deployed SUCCESSFULLY"
+      echo 'Application Deployed SUCCESSFULLY'
     }
     failure {
       echo 'BUILD or Deployment FAILED'
