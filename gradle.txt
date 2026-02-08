@@ -1,0 +1,164 @@
+.
+├── build.gradle
+├── docker-compose.yml
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.txt
+├── gradlew
+├── gradlew.bat
+├── k8s
+│   ├── db.yml
+│   └── petclinic.yml
+├── LICENSE.txt
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+├── README.md
+├── settings.gradle
+└── src
+    ├── checkstyle
+    │   ├── nohttp-checkstyle-suppressions.xml
+    │   └── nohttp-checkstyle.xml
+    ├── main
+    │   ├── java
+    │   │   └── org
+    │   │       └── springframework
+    │   │           └── samples
+    │   │               └── petclinic
+    │   │                   ├── model
+    │   │                   │   ├── BaseEntity.java
+    │   │                   │   ├── NamedEntity.java
+    │   │                   │   ├── package-info.java
+    │   │                   │   └── Person.java
+    │   │                   ├── owner
+    │   │                   │   ├── Owner.java
+    │   │                   │   ├── OwnerController.java
+    │   │                   │   ├── OwnerRepository.java
+    │   │                   │   ├── package-info.java
+    │   │                   │   ├── Pet.java
+    │   │                   │   ├── PetController.java
+    │   │                   │   ├── PetType.java
+    │   │                   │   ├── PetTypeFormatter.java
+    │   │                   │   ├── PetTypeRepository.java
+    │   │                   │   ├── PetValidator.java
+    │   │                   │   ├── Visit.java
+    │   │                   │   └── VisitController.java
+    │   │                   ├── package-info.java
+    │   │                   ├── PetClinicApplication.java
+    │   │                   ├── PetClinicRuntimeHints.java
+    │   │                   ├── system
+    │   │                   │   ├── CacheConfiguration.java
+    │   │                   │   ├── CrashController.java
+    │   │                   │   ├── package-info.java
+    │   │                   │   ├── WebConfiguration.java
+    │   │                   │   └── WelcomeController.java
+    │   │                   └── vet
+    │   │                       ├── package-info.java
+    │   │                       ├── Specialty.java
+    │   │                       ├── Vet.java
+    │   │                       ├── VetController.java
+    │   │                       ├── VetRepository.java
+    │   │                       └── Vets.java
+    │   ├── resources
+    │   │   ├── application-mysql.properties
+    │   │   ├── application-postgres.properties
+    │   │   ├── application.properties
+    │   │   ├── banner.txt
+    │   │   ├── db
+    │   │   │   ├── h2
+    │   │   │   │   ├── data.sql
+    │   │   │   │   └── schema.sql
+    │   │   │   ├── mysql
+    │   │   │   │   ├── data.sql
+    │   │   │   │   ├── petclinic_db_setup_mysql.txt
+    │   │   │   │   ├── schema.sql
+    │   │   │   │   └── user.sql
+    │   │   │   └── postgres
+    │   │   │       ├── data.sql
+    │   │   │       ├── petclinic_db_setup_postgres.txt
+    │   │   │       └── schema.sql
+    │   │   ├── messages
+    │   │   │   ├── messages_de.properties
+    │   │   │   ├── messages_en.properties
+    │   │   │   ├── messages_es.properties
+    │   │   │   ├── messages_fa.properties
+    │   │   │   ├── messages_ko.properties
+    │   │   │   ├── messages_pt.properties
+    │   │   │   ├── messages_ru.properties
+    │   │   │   ├── messages_tr.properties
+    │   │   │   └── messages.properties
+    │   │   ├── static
+    │   │   │   └── resources
+    │   │   │       ├── css
+    │   │   │       │   └── petclinic.css
+    │   │   │       ├── fonts
+    │   │   │       │   ├── montserrat-webfont.eot
+    │   │   │       │   ├── montserrat-webfont.svg
+    │   │   │       │   ├── montserrat-webfont.ttf
+    │   │   │       │   ├── montserrat-webfont.woff
+    │   │   │       │   ├── varela_round-webfont.eot
+    │   │   │       │   ├── varela_round-webfont.svg
+    │   │   │       │   ├── varela_round-webfont.ttf
+    │   │   │       │   └── varela_round-webfont.woff
+    │   │   │       └── images
+    │   │   │           ├── favicon.png
+    │   │   │           ├── pets.png
+    │   │   │           ├── spring-logo-dataflow-mobile.png
+    │   │   │           ├── spring-logo-dataflow.png
+    │   │   │           └── spring-logo.svg
+    │   │   └── templates
+    │   │       ├── error.html
+    │   │       ├── fragments
+    │   │       │   ├── inputField.html
+    │   │       │   ├── layout.html
+    │   │       │   └── selectField.html
+    │   │       ├── owners
+    │   │       │   ├── createOrUpdateOwnerForm.html
+    │   │       │   ├── findOwners.html
+    │   │       │   ├── ownerDetails.html
+    │   │       │   └── ownersList.html
+    │   │       ├── pets
+    │   │       │   ├── createOrUpdatePetForm.html
+    │   │       │   └── createOrUpdateVisitForm.html
+    │   │       ├── vets
+    │   │       │   └── vetList.html
+    │   │       └── welcome.html
+    │   └── scss
+    │       ├── header.scss
+    │       ├── petclinic.scss
+    │       ├── responsive.scss
+    │       └── typography.scss
+    └── test
+        ├── java
+        │   └── org
+        │       └── springframework
+        │           └── samples
+        │               └── petclinic
+        │                   ├── model
+        │                   │   └── ValidatorTests.java
+        │                   ├── MySqlIntegrationTests.java
+        │                   ├── MysqlTestApplication.java
+        │                   ├── owner
+        │                   │   ├── OwnerControllerTests.java
+        │                   │   ├── PetControllerTests.java
+        │                   │   ├── PetTypeFormatterTests.java
+        │                   │   ├── PetValidatorTests.java
+        │                   │   └── VisitControllerTests.java
+        │                   ├── PetClinicIntegrationTests.java
+        │                   ├── PostgresIntegrationTests.java
+        │                   ├── service
+        │                   │   ├── ClinicServiceTests.java
+        │                   │   └── EntityUtils.java
+        │                   ├── system
+        │                   │   ├── CrashControllerIntegrationTests.java
+        │                   │   ├── CrashControllerTests.java
+        │                   │   └── I18nPropertiesSyncTest.java
+        │                   └── vet
+        │                       ├── VetControllerTests.java
+        │                       └── VetTests.java
+        └── jmeter
+            └── petclinic_test_plan.jmx
+
+45 directories, 117 files
