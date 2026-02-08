@@ -36,7 +36,7 @@ pipeline {
       steps {
         sh '''
         sleep 20
-        curl -f http://localhost:8080 || exit 1
+        curl -f http://localhost:8081 || exit 1
         '''
       }
     }
