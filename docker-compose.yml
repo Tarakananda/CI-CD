@@ -4,7 +4,7 @@ services:
   app:
     image: creatingproject:latest
     ports:
-      - "8080:8080"
+      - "8081:8080"
     environment:
       SPRING_PROFILES_ACTIVE: dev
       DB_HOST: mysql
