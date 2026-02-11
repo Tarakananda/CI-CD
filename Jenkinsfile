@@ -15,7 +15,7 @@ pipeline {
 
     stage('Maven Build') {
       steps {
-        sh 'mvn clean package -Pci'
+        sh './mvnw clean package -Pci'
       }
     }
 
